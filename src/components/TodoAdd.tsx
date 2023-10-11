@@ -34,7 +34,7 @@ const TodoAdd: React.FC<TodoAddProps> = ({ onNewTodo }) => {
             className="space-x-2"
         >
             <input
-                className="border border-slate-300 rounded-md py-1 px-1 shadow-sm hover:border-teal-200 focus:outline-none focus:border-teal-400 focus:ring-teal-500 focus:ring-1"
+                className="transition-all duration-1000 border border-slate-300 rounded-md py-1 px-1 shadow-sm hover:border-teal-200 focus:outline-none focus:border-teal-400 focus:ring-teal-500 focus:ring-1"
                 type="text"
                 placeholder="¿Qué hay que hacer?"
                 name="description"
@@ -43,7 +43,7 @@ const TodoAdd: React.FC<TodoAddProps> = ({ onNewTodo }) => {
             />
 
             <button
-                className="bg-teal-300 text-white font-semibold shadow-inner hover:shadow-md border rounded-lg py-1 px-2 hover:bg-teal-400"
+                className="transition-all duration-100 bg-teal-300 text-white font-semibold shadow-inner hover:shadow-md border rounded-lg py-1 px-2 hover:bg-teal-400"
                 type="submit"
             >
                 Agregar

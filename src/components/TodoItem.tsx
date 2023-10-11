@@ -35,7 +35,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, onDeleteTodo, onToggleTodo })
                         className="accent-teal-500"
                     />
                     <span
-                        className={`text-xl ${todoDoneStyle} whitespace-normal break-words`}
+                        className={`transition-all duration-100 text-xl ${todoDoneStyle} whitespace-normal break-words`}
                         // style={{ textDecoration: todo.done ? "line-through" : "none" }}
                         onClick={handleToggle}
                         aria-label="span"
@@ -48,7 +48,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, onDeleteTodo, onToggleTodo })
                     onClick={() => onDeleteTodo(todo.id)}
                 >
                     <div className="h-6 w-6">
-                        <img src={tacho} className="object-cover object-center opacity-60 hover:opacity-100" />
+                        <img src={tacho} className="transition-all duration-100 object-cover object-center opacity-60 hover:opacity-100" />
                     </div>
                 </button>
             </div>

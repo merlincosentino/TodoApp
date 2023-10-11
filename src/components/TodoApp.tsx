@@ -38,12 +38,12 @@ const TodoApp: React.FC<TodoAppProps> = () => {
                 </section>
 
                 <section className="flex flex-col w-full h-full bg-slate-100">
-                    <div className="flex flex-col w-auto h-full m-2 md:mx-10 lg:mx-20 xl:mx-24 items-center bg-white border rounded-lg p-2 shadow-md">
+                    <div className="transition-all duration-100 flex flex-col w-auto h-full m-2 md:mx-10 lg:mx-20 xl:mx-24 items-center bg-white border rounded-lg p-2 shadow-md">
                         <div>
                             <TodoAdd onNewTodo={handleTodo} />
                         </div>
 
-                        <div className={`flex flex-row w-full ${backgroundClass} space-x-2 border rounded-md m-2 px-2 py-1 justify-around shadow-inner`}>
+                        <div className={`transition-all duration-100 flex flex-row w-full ${backgroundClass} space-x-2 border rounded-md m-2 px-2 py-1 justify-around shadow-inner`}>
                             <h2>Anotadas: {todosCount}</h2>
                             <h2 className="justify-self-center">-</h2>
                             <h2>Pendientes: {todosPendingCount}</h2>
@@ -65,7 +65,7 @@ const TodoApp: React.FC<TodoAppProps> = () => {
                         <div>
                             <button
                                 onClick={handleDeleteAllTodos}
-                                className="border rounded-lg bg-red-300 px-2 py-1 hover:bg-red-500 font-semibold text-white shadow-inner hover:shadow-md"
+                                className="transition-all duration-100 border rounded-lg bg-red-300 px-2 py-1 hover:bg-red-500 font-semibold text-white shadow-inner hover:shadow-md"
                             >
                                 Limpiar lista
                             </button>
