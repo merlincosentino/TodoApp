@@ -8,7 +8,7 @@ interface TodoAppProps { }
 const TodoApp: React.FC<TodoAppProps> = () => {
     const { todos, todosCount, todosPendingCount, handleTodo, handleDeleteTodo, handleToggleTodo, handleDeleteAllTodos } = useTodos();
 
-    const disclaimerClass = 'text-xs text-slate-400'
+    const instructionsClass = 'text-xs text-slate-400'
 
     let backgroundClass = '';
     if (todosCount === 0 && todosPendingCount === 0) {
@@ -71,11 +71,11 @@ const TodoApp: React.FC<TodoAppProps> = () => {
                             </button>
                         </div>
                         <div className="text-center mx-8 my-2 space-y-2">
-                            <p className={disclaimerClass}>El espacio donde se visualizan las tareas anotadas y pendientes cambia de color dependiendo de la cantidad de tareas realizadas, en comparación con las tareas anotadas.</p>
-                            <p className={disclaimerClass}>Si el número de tareas realizadas es mayor al la mitad de las tareas anotadas el fondo será rojo</p>
-                            <p className={disclaimerClass}>Si el número de tareas realizadas es igual o menor a la mitad de las tareas anotadas el fondo será amarillo.</p>
-                            <p className={disclaimerClass}>Cuando todas las tareas hayan sido realizadas el fondo se tornará color verde.</p>
-                            <p className={disclaimerClass}>Esto fue pensado como un incentivo para tu mente, espero te sea útil.</p>
+                            <p className={instructionsClass}>El espacio donde se visualizan las tareas anotadas y pendientes cambia de color dependiendo de la cantidad de tareas realizadas, en comparación con las tareas anotadas.</p>
+                            <p className={instructionsClass}>Si el número de tareas realizadas es mayor a la mitad de las tareas anotadas el fondo será rojo</p>
+                            <p className={instructionsClass}>Si el número de tareas realizadas es igual o menor a la mitad de las tareas anotadas el fondo será amarillo.</p>
+                            <p className={instructionsClass}>Cuando todas las tareas hayan sido realizadas el fondo se tornará color verde.</p>
+                            <p className={instructionsClass}>Esto fue pensado como un incentivo para tu mente, espero te sea útil.</p>
                         </div>
                     </div>
                 </section>
